@@ -23,7 +23,7 @@ test("initial conditions", () => {
 
 test("checked/unchecked conditions", () => {
   render(<App />);
-  const checkBox = screen.getByRole("checkbox");
+  const checkBox = screen.getByRole("checkbox", { name: "Disable button" });
   const colorButton = screen.getByRole("button", { name: "Change to blue" });
 
   // for checked
